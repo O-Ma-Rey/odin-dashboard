@@ -10,24 +10,44 @@ body {
 
 /* Main content */
 
-.content-page {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr) repeat(1, 4fr);
+.search {
+  display: flex;
+  border: 1px solid blue;
+  padding: 10px;
+  justify-content: space-around;
 }
 
-.header {
+.search-pic {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.search-bar {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
-  border: 1px solid blue;
+  width: 50%;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.pfp {
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .content {
-  border: 1px solid red
+  border: 1px solid red;
 }
 
 .input {
-  border: 1px solid darkgreen;
-  width: 50%;
+  width: 100%;
   border-radius: 5px;
 }
 
