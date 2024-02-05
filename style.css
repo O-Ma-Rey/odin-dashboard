@@ -90,14 +90,63 @@ h4 {
 /* Content */
 
 .content {
-  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(1, 3fr) repeat(1, 2fr);
+  background-color: #f3f4f6;
+}
+
+.project {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 270px 270px;
+  grid-template-rows: auto;
+  row-gap: 15px;
+  column-gap: 60px;
+  margin-top: 5px;
+}
+
+.card {
+  width: 270px;
+  height: 125px;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+  border: 2px solid #c3c6ce;
+  border-left: 5px solid orange;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold
+}
+
+.body {
+  color: rgb(134, 134, 134);
+}
+
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* for sidebar */
 
 .sidebar {
   display: grid;
-
   border: 1px solid gold;
   background-color: #a855f7;
   color: white;
@@ -105,7 +154,6 @@ h4 {
 
 .sidebar-header {
   display: flex;
-  border: 1px solid black;
 }
 
 .side-head-logo {
